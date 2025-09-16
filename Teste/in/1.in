@@ -1,0 +1,108 @@
+set testing on
+set perioada 100
+new angajat administrator
+new angajat broker
+new angajat broker
+
+new produs mobila bibelou_1 bibelou portelan 2345 244
+new produs mobila bibelou_2 bibelou portelan 2345 244
+new produs mobila bibelou_3 bibelou portelan 2345 244
+new produs mobila bibelou_4 bibelou portelan 2345 244
+new produs mobila bibelou_5 bibelou portelan 2345 244
+
+new produs tablou Monalisa Pikasso tempera 1034 2505407
+new produs mobila pat dormitor lemn 2000 250
+new produs bijuterie Medalion aur+opal true 1274 34364656
+new produs tablou Bazaconii_1 Chiorul ulei 2020 5407
+new produs mobila dulap bucatarie lemn 2021 2340
+new produs bijuterie Colier argint+lapis true 1174 4364656
+
+new client psf Baciu_Vasile Pripas_35 15.11.1973
+new client psf Balosul Silistea_21 23.05.1983
+new client psj CassaLoco Wild_Guess_1 SRL 1234567.89
+new client psf Baciu_Vasile Aviatorilor_35 23.12.1999
+new client pSf Puiu_Faranga Sapientii 13.12.1983
+new client psj CassaLoco Wild_Guess_1 SRL 1234567.89
+new client psf Puiu_Faranga_Fictiv Pacientii_13 13.13.1983
+new client psj Pacaleala Confidential SERELE 6658346952365.65
+
+print produse
+client 16 print_produse
+client 17 print_produse
+
+client 17 licitez 9 375
+client 17 propun 9 375
+client 17 propun 9 312.5
+
+client 16 licitez 9 375
+
+client 19 licitez 12 3000
+client 18 licitez 12 3000
+client 14 licitez 12 3500
+
+print licitatii
+
+client 17 propun 9 0
+client 16 propun 9 10
+client 17 propun 9 -1
+client 17 propun 9 15
+client 17 propun 9 20
+
+print licitatii
+
+client 17 quit 10
+client 17 quit 9
+client 15 quit 9
+
+client 16 skip
+client 16 skip 9
+client 16 skip 9
+client 15 licitez 9 356
+
+client 19 propun 12 2359
+client 14 propun 12 365
+
+client 15 propun 9 300
+
+client 18 propun 12 326
+client 19 skip 12
+client 18 propun 12 503
+client 14 propun 12 765
+
+client 15 propun 9 296.6666666666667
+client 16 propun 9 300
+
+client 19 propun 12 2400
+client 18 propun 1289
+client 18 propun 12 1254
+
+print licitatii
+print produse
+print brokeri
+print clienti
+
+
+new produs mobila bibelou_6 bibelou portelan 2345 244
+new produs mobila bibelou_7 bibelou portelan 2345 244
+new produs mobila bibelou_8 bibelou portelan 2345 244
+new produs mobila bibelou_9 bibelou portelan 2345 244
+new produs mobila bibelou_10 bibelou portelan 2345 244
+
+new produs mobila bibelou_11 bibelou portelan 2345 244
+new produs mobila bibelou_12 bibelou portelan 2345 244
+new produs mobila bibelou_13 bibelou portelan 2345 244
+new produs mobila bibelou_14 bibelou portelan 2345 244
+new produs mobila bibelou_15 bibelou portelan 2345 244
+
+print licitatii
+
+client 14 propun 12 3476
+client 14 propun 12 2500
+
+client 14
+print clienti
+client 15 propun 9 290
+print produse
+print licitatii
+
+stop
